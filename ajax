@@ -1,0 +1,19 @@
+ajax:
+
+----- download file using ajax  -----
+style A: 
+$.ajax({
+  url: "",
+  type: "",
+  data: "",
+  xhrFields: { responseType: "arraybuffer" }, // or blob
+});
+
+style B:
+var data = "";
+var request = new XMLHttpRequest();
+request.open('POST', url, true);
+request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+request.responseType = 'blob';  //or arraybuffer
+
+request.send(data);
