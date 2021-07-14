@@ -1,0 +1,4 @@
+<component>
+  @abc -> take abc() action
+  :def -> def is attrable, def = 100
+</component>
